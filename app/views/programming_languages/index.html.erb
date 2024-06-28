@@ -6,7 +6,10 @@
   <% @programming_languages.each do |programming_language| %>
     <%= render programming_language %>
     <p>
-      <%= link_to "Show this programming language", programming_language %>
+      <%= link_to "More Info", programming_language %>
+    </p>
+    <p>
+      <%= link_to "Edit", edit_programming_language_path(programming_language) %>
     </p>
   <% end %>
 </div>

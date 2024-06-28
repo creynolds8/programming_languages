@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+  
   root "programming_languages#index"
+
+  get "/programming_languages", to: redirect("/")
+
   resources :programming_languages
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
